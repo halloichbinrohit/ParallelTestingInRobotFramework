@@ -1,0 +1,60 @@
+
+07-26-2025 01:41:49 AM - INFO - root : ***** [ START OF TEST - Login with user but empty password ] ******
+
+07-26-2025 01:42:08 AM - INFO - root : Opening browser: chrome with url: https://www.saucedemo.com/ and chrome-options: <selenium.webdriver.chrome.options.Options object at 0x000002248D2C3FD0>
+
+07-26-2025 01:42:08 AM - INFO - root : Test Data >>> Username: standard_user, Password: , Error: Epic sadface: Password is required
+
+07-26-2025 01:42:09 AM - INFO - root : Error Message: Epic sadface: Password is required displayed on page
+
+07-26-2025 01:42:10 AM - INFO - root : ***** Test Status: PASS *****
+
+07-26-2025 01:42:10 AM - INFO - root : ***** [ END OF TEST - Login with user but empty password ] *****
+
+07-26-2025 01:42:14 AM - INFO - root : ***** [ START OF TEST - Login with empty user but password ] ******
+
+07-26-2025 01:42:17 AM - INFO - root : Opening browser: chrome with url: https://www.saucedemo.com/ and chrome-options: <selenium.webdriver.chrome.options.Options object at 0x000002248D2C1B50>
+
+07-26-2025 01:42:17 AM - INFO - root : Test Data >>> Username: , Password: secret_sauce, Error: Epic sadface: Username is required
+
+07-26-2025 01:42:17 AM - INFO - root : Error Message: Epic sadface: Username is required displayed on page
+
+07-26-2025 01:42:18 AM - INFO - root : ***** Test Status: PASS *****
+
+07-26-2025 01:42:18 AM - INFO - root : ***** [ END OF TEST - Login with empty user but password ] *****
+
+07-26-2025 01:42:21 AM - INFO - root : ***** [ START OF TEST - Valid user but invalid password ] ******
+
+07-26-2025 01:42:23 AM - INFO - root : Opening browser: chrome with url: https://www.saucedemo.com/ and chrome-options: <selenium.webdriver.chrome.options.Options object at 0x000002248D30AA10>
+
+07-26-2025 01:42:23 AM - INFO - root : Test Data >>> Username: standard_user, Password: 1234, Error: Epic sadface: Username and password do not match any user in this service
+
+07-26-2025 01:42:24 AM - INFO - root : Error Message: Epic sadface: Username and password do not match any user in this service displayed on page
+
+07-26-2025 01:42:24 AM - INFO - root : ***** Test Status: PASS *****
+
+07-26-2025 01:42:24 AM - INFO - root : ***** [ END OF TEST - Valid user but invalid password ] *****
+
+07-26-2025 01:42:27 AM - INFO - root : ***** [ START OF TEST - Invalid user but valid password ] ******
+
+07-26-2025 01:42:30 AM - INFO - root : Opening browser: chrome with url: https://www.saucedemo.com/ and chrome-options: <selenium.webdriver.chrome.options.Options object at 0x000002248D32B810>
+
+07-26-2025 01:42:30 AM - INFO - root : Test Data >>> Username: myuser123, Password: secret_sauce, Error: Epic sadface: Username and password do not match any user in this service
+
+07-26-2025 01:42:31 AM - INFO - root : Error Message: Epic sadface: Username and password do not match any user in this service displayed on page
+
+07-26-2025 01:42:31 AM - INFO - root : ***** Test Status: PASS *****
+
+07-26-2025 01:42:31 AM - INFO - root : ***** [ END OF TEST - Invalid user but valid password ] *****
+
+07-26-2025 01:42:34 AM - INFO - root : ***** [ START OF TEST - Login with locked out user ] ******
+
+07-26-2025 01:42:37 AM - INFO - root : Opening browser: chrome with url: https://www.saucedemo.com/ and chrome-options: <selenium.webdriver.chrome.options.Options object at 0x000002248D30A590>
+
+07-26-2025 01:42:37 AM - INFO - root : Test Data >>> Username: locked_out_user, Password: secret_sauce, Error: Epic sadface: Sorry, this user has been locked out.
+
+07-26-2025 01:42:38 AM - INFO - root : Error Message: Epic sadface: Sorry, this user has been locked out. displayed on page
+
+07-26-2025 01:42:38 AM - INFO - root : ***** Test Status: PASS *****
+
+07-26-2025 01:42:38 AM - INFO - root : ***** [ END OF TEST - Login with locked out user ] *****

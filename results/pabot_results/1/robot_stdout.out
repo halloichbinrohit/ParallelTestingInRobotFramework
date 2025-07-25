@@ -1,0 +1,18 @@
+==============================================================================
+Testcases                                                                     
+==============================================================================
+Testcases.Sauce_Home_Suite :: This suite performs basic checks for saucedem...
+==============================================================================
+Verify Login Page Title For SauceDemo Website                         | FAIL |
+Setup failed:
+NoSuchDriverException: Message: Unable to obtain driver for chrome using Selenium Manager.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+------------------------------------------------------------------------------
+Verify Login Page Heading Displayed With Required Text                | PASS |
+------------------------------------------------------------------------------
+Testcases.Sauce_Home_Suite :: This suite performs basic checks for... | FAIL |
+2 tests, 1 passed, 1 failed
+==============================================================================
+Testcases                                                             | FAIL |
+2 tests, 1 passed, 1 failed
+==============================================================================
+Output:  C:\Users\rohitnegi01\PycharmProjects\SauceDemoRobotFramework\results\pabot_results\1\output.xml

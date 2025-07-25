@@ -1,0 +1,4 @@
+allure-robotframework
+robotframework
+robotframework-pabot
+robotframework-seleniumlibrary

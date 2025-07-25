@@ -1,0 +1,16 @@
+==============================================================================
+Testcases                                                                     
+==============================================================================
+Testcases.Valid_Login_Suite :: This suite performs checks for valid login     
+==============================================================================
+Verify Login Successful For Valid Credentials                         | FAIL |
+Setup failed:
+WebDriverException: Message: 'chromedriver.exe' executable may have wrong permissions.
+------------------------------------------------------------------------------
+Testcases.Valid_Login_Suite :: This suite performs checks for vali... | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Testcases                                                             | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\rohitnegi01\PycharmProjects\SauceDemoRobotFramework\results\pabot_results\2\output.xml

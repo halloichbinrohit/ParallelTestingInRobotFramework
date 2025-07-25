@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.11.4 on win32)" generated="2025-07-26T01:41:48.777265" rpa="false" schemaversion="5">
+<suite id="s1" name="Testcases" source="C:\Users\rohitnegi01\PycharmProjects\SauceDemoRobotFramework\testcases">
+<suite id="s1-s1" name="Valid_Login_Suite" source="C:\Users\rohitnegi01\PycharmProjects\SauceDemoRobotFramework\testcases\Valid_Login_Tests.robot">
+<test id="s1-s1-t1" name="Verify Login Successful For Valid Credentials" line="16">
+<kw name="Run Keywords" owner="BuiltIn" type="SETUP">
+<msg time="2025-07-26T01:41:49.395965" level="TRACE">Arguments: [ 'Before Test' | 'AND' | 'Launch Browser With Clean State' | 'https://www.saucedemo.com/' | 'chrome' ]</msg>
+<kw name="Before Test" owner="common">
+<msg time="2025-07-26T01:41:49.395965" level="TRACE">Arguments: [  ]</msg>
+<kw name="Log Info To File" owner="logging">
+<msg time="2025-07-26T01:41:49.397979" level="TRACE">Arguments: [ ${message}='***** [ START OF TEST - Verify Login Successful For Valid Credentials ] ******' ]</msg>
+<kw name="Log To File" owner="logger">
+<msg time="2025-07-26T01:41:49.397979" level="TRACE">Arguments: [ '***** [ START OF TEST - Verify Login Successful For Valid Credentials ] ******' | 'Verify Login Successful For Valid Credentials' ]</msg>
+<msg time="2025-07-26T01:41:49.399723" level="INFO">07-26-2025 01:41:49 AM - INFO - root : ***** [ START OF TEST - Verify Login Successful For Valid Credentials ] ******</msg>
+<msg time="2025-07-26T01:41:49.399723" level="TRACE">Return: None</msg>
+<arg>${message}</arg>
+<arg>${TEST_NAME}</arg>
+<status status="PASS" start="2025-07-26T01:41:49.397979" elapsed="0.002613"/>
+</kw>
+<msg time="2025-07-26T01:41:49.401131" level="TRACE">Return: None</msg>
+<arg>***** [ START OF TEST - ${TEST_NAME} ] ******</arg>
+<status status="PASS" start="2025-07-26T01:41:49.397979" elapsed="0.003152"/>
+</kw>
+<msg time="2025-07-26T01:41:49.402392" level="TRACE">Return: None</msg>
+<status status="PASS" start="2025-07-26T01:41:49.395965" elapsed="0.006427"/>
+</kw>
+<kw name="Launch Browser With Clean State" owner="common">
+<msg time="2025-07-26T01:41:49.404792" level="TRACE">Arguments: [ ${url}='https://www.saucedemo.com/' | ${browser}='chrome' ]</msg>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-07-26T01:41:49.404792" level="TRACE">Arguments: [ "sys.modules['selenium.webdriver'].ChromeOptions()" | 'sys, selenium.webdriver' ]</msg>
+<msg time="2025-07-26T01:41:49.404792" level="TRACE">Return: &lt;selenium.webdriver.chrome.options.Options object at 0x000001DB29423E10&gt;</msg>
+<msg time="2025-07-26T01:41:49.404792" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000001DB29423E10&gt;</msg>
+<var>${options}</var>
+<arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
+<arg>sys, selenium.webdriver</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-07-26T01:41:49.404792" elapsed="0.000000"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-07-26T01:41:49.406664" level="TRACE">Arguments: [ '{"credentials_enable_service": False, "profile.password_manager_enabled": False}' ]</msg>
+<msg time="2025-07-26T01:41:49.406664" level="TRACE">Return: {'credentials_enable_service': False, 'profile.password_manager_enabled': False}</msg>
+<msg time="2025-07-26T01:41:49.406664" level="INFO">${prefs} = {'credentials_enable_service': False, 'profile.password_manager_enabled': False}</msg>
+<var>${prefs}</var>
+<arg>{"credentials_enable_service": False, "profile.password_manager_enabled": False}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-07-26T01:41:49.406664" elapsed="0.000000"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<msg time="2025-07-26T01:41:49.408294" level="TRACE">Arguments: [ &lt;selenium.webdriver.chrome.options.Options object at 0x000001DB29423E10&gt; | 'add_experimental_option' | 'prefs' | {'credentials_enable_service': False, 'profile.password_manager_enabled': False} ]</msg>
+<msg time="2025-07-26T01:41:49.409409" level="TRACE">Return: None</msg>
+<arg>${options}</arg>
+<arg>add_experimental_option</arg>
+<arg>prefs</arg>
+<arg>${prefs}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2025-07-26T01:41:49.408294" elapsed="0.001115"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-07-26T01:41:49.410291" level="TRACE">Arguments: [ "__import__('tempfile').mkdtemp()" ]</msg>
+<msg time="2025-07-26T01:41:49.410291" level="TRACE">Return: 'C:\\Users\\ROHITN~1\\AppData\\Local\\Temp\\tmpo42qw682'</msg>
+<msg time="2025-07-26T01:41:49.410291" level="INFO">${tempdir} = C:\Users\ROHITN~1\AppData\Local\Temp\tmpo42qw682</msg>
+<var>${tempdir}</var>
+<arg>__import__('tempfile').mkdtemp()</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-07-26T01:41:49.410291" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-07-26T01:41:49.413307" level="TRACE">Arguments: [ '--user-data-dir=C:\\Users\\ROHITN~1\\AppData\\Local\\Temp\\tmpo42qw682' ]</msg>
+<msg time="2025-07-26T01:41:49.413307" level="TRACE">Return: '--user-data-dir=C:\\Users\\ROHITN~1\\AppData\\Local\\Temp\\tmpo42qw682'</msg>
+<msg time="2025-07-26T01:41:49.413307" level="INFO">${user_data_arg} = --user-data-dir=C:\Users\ROHITN~1\AppData\Local\Temp\tmpo42qw682</msg>
+<var>${user_data_arg}</var>
+<arg>--user-data-dir=${tempdir}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-07-26T01:41:49.412299" elapsed="0.001008"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<msg time="2025-07-26T01:41:49.415122" level="TRACE">Arguments: [ &lt;selenium.webdriver.chrome.options.Options object at 0x000001DB29423E10&gt; | 'add_argument' | '--user-data-dir=C:\\Users\\ROHITN~1\\AppData\\Local\\Temp\\tmpo42qw682' ]</msg>
+<msg time="2025-07-26T01:41:49.415672" level="TRACE">Return: None</msg>
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>${user_data_arg}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2025-07-26T01:41:49.415122" elapsed="0.000550"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<msg time="2025-07-26T01:41:49.416625" level="TRACE">Arguments: [ &lt;selenium.webdriver.chrome.options.Options object at 0x000001DB29423E10&gt; | 'add_argument' | '--no-default-browser-check' ]</msg>
+<msg time="2025-07-26T01:41:49.416625" level="TRACE">Return: None</msg>
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--no-default-browser-check</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2025-07-26T01:41:49.416625" elapsed="0.000000"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<msg time="2025-07-26T01:41:49.417237" level="TRACE">Arguments: [ &lt;selenium.webdriver.chrome.options.Options object at 0x000001DB29423E10&gt; | 'add_argument' | '--no-first-run' ]</msg>
+<msg time="2025-07-26T01:41:49.417237" level="TRACE">Return: None</msg>
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--no-first-run</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2025-07-26T01:41:49.417237" elapsed="0.000000"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-26T01:41:49.419466" level="TRACE">Arguments: [ 'https://www.saucedemo.com/' | 'chrome' | options=&lt;selenium.webdriver.chrome.options.Options object at 0x000001DB29423E10&gt; ]</msg>
+<msg time="2025-07-26T01:41:49.419466" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<msg time="2025-07-26T01:41:58.369170" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-07-26T01:41:58.369170" level="FAIL">WebDriverException: Message: 'chromedriver.exe' executable may have wrong permissions.
+</msg>
+<msg time="2025-07-26T01:41:58.637215" level="DEBUG">Traceback (most recent call last):
+  File "C:\Users\rohitnegi01\AppData\Roaming\Python\Python311\site-packages\selenium\webdriver\common\service.py", line 206, in _start_process
+    self.process = subprocess.Popen(
+                   ^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Program Files\Python311\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\rohitnegi01\AppData\Roaming\Python\Python311\site-packages\SeleniumLibrary\__init__.py", line 677, in run_keyword
+    return DynamicCore.run_keyword(self, name, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rohitnegi01\AppData\Roaming\Python\Python311\site-packages\robotlibcore.py", line 173, in run_keyword
+    return self.keywords[name](*args, **(kwargs or {}))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rohitnegi01\AppData\Roaming\Python\Python311\site-packages\SeleniumLibrary\keywords\browsermanagement.py", line 220, in open_browser
+    return self._make_new_browser(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rohitnegi01\AppData\Roaming\Python\Python311\site-packages\SeleniumLibrary\keywords\browsermanagement.py", line 253, in _make_new_browser
+    driver = self._make_driver(
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rohitnegi01\AppData\Roaming\Python\Python311\site-packages\SeleniumLibrary\keywords\browsermanagement.py", line 709, in _make_driver
+    driver = self._webdriver_creator.create_driver(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rohitnegi01\AppData\Roaming\Python\Python311\site-packages\SeleniumLibrary\keywords\webdrivertools\webdrivertools.py", line 96, in create_driver
+    return creation_method(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\rohitnegi01\AppData\Roaming\Python\Python311\site-packages\SeleniumLibrary\keywords\webdrivertools\webdrivertools.py", line 166, in create_chrome
+    return webdriver.Chrome(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\rohitnegi01\AppData\Roaming\Python\Python311\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+  File "C:\Users\rohitnegi01\AppData\Roaming\Python\Python311\site-packages\selenium\webdriver\chromium\webdriver.py", line 53, in __init__
+    self.service.start()
+  File "C:\Users\rohitnegi01\AppData\Roaming\Python\Python311\site-packages\selenium\webdriver\common\service.py", line 105, in start
+    self._start_process(self._path)
+  File "C:\Users\rohitnegi01\AppData\Roaming\Python\Python311\site-packages\selenium\webdriver\common\service.py", line 221, in _start_process
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable may have wrong permissions.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<arg>options=${options}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2025-07-26T01:41:49.419466" elapsed="9.217749">WebDriverException: Message: 'chromedriver.exe' executable may have wrong permissions.
+</status>
+</kw>
+<kw name="Log Info To File" owner="logging">
+<arg>Opening browser: ${browser} with url: ${url} and chrome-options: ${options}</arg>
+<status status="NOT RUN" start="2025-07-26T01:41:58.639236" elapsed="0.001012"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2025-07-26T01:41:58.640248" elapsed="0.000000"/>
+</kw>
+<arg>https://www.saucedemo.com/</arg>
+<arg>chrome</arg>
+<status status="FAIL" start="2025-07-26T01:41:49.403918" elapsed="9.238355">WebDriverException: Message: 'chromedriver.exe' executable may have wrong permissions.
+</status>
+</kw>
+<arg>Before Test</arg>
+<arg>AND</arg>
+<arg>Launch Browser With Clean State</arg>
+<arg>https://www.saucedemo.com/</arg>
+<arg>chrome</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="FAIL" start="2025-07-26T01:41:49.395965" elapsed="9.250399">WebDriverException: Message: 'chromedriver.exe' executable may have wrong permissions.
+</status>
+</kw>
+<kw name="Run Keywords" owner="BuiltIn" type="TEARDOWN">
+<msg time="2025-07-26T01:41:58.651250" level="TRACE">Arguments: [ 'After Test' | 'AND' | 'Close Browser' ]</msg>
+<kw name="After Test" owner="common">
+<msg time="2025-07-26T01:41:58.654288" level="TRACE">Arguments: [  ]</msg>
+<kw name="Log Info To File" owner="logging">
+<msg time="2025-07-26T01:41:58.656833" level="TRACE">Arguments: [ ${message}='***** Test Status: FAIL *****' ]</msg>
+<kw name="Log To File" owner="logger">
+<msg time="2025-07-26T01:41:58.660874" level="TRACE">Arguments: [ '***** Test Status: FAIL *****' | 'Verify Login Successful For Valid Credentials' ]</msg>
+<msg time="2025-07-26T01:41:58.664190" level="INFO">07-26-2025 01:41:58 AM - INFO - root : ***** Test Status: FAIL *****</msg>
+<msg time="2025-07-26T01:41:58.664190" level="TRACE">Return: None</msg>
+<arg>${message}</arg>
+<arg>${TEST_NAME}</arg>
+<status status="PASS" start="2025-07-26T01:41:58.656833" elapsed="0.007875"/>
+</kw>
+<msg time="2025-07-26T01:41:58.668107" level="TRACE">Return: None</msg>
+<arg>***** Test Status: ${TEST_STATUS} *****</arg>
+<status status="PASS" start="2025-07-26T01:41:58.654288" elapsed="0.013819"/>
+</kw>
+<kw name="Log Info To File" owner="logging">
+<msg time="2025-07-26T01:41:58.670117" level="TRACE">Arguments: [ ${message}='***** [ END OF TEST - Verify Login Successful For Valid Credentials ] *****' ]</msg>
+<kw name="Log To File" owner="logger">
+<msg time="2025-07-26T01:41:58.671877" level="TRACE">Arguments: [ '***** [ END OF TEST - Verify Login Successful For Valid Credentials ] *****' | 'Verify Login Successful For Valid Credentials' ]</msg>
+<msg time="2025-07-26T01:41:58.673943" level="INFO">07-26-2025 01:41:58 AM - INFO - root : ***** [ END OF TEST - Verify Login Successful For Valid Credentials ] *****</msg>
+<msg time="2025-07-26T01:41:58.674968" level="TRACE">Return: None</msg>
+<arg>${message}</arg>
+<arg>${TEST_NAME}</arg>
+<status status="PASS" start="2025-07-26T01:41:58.671877" elapsed="0.003091"/>
+</kw>
+<msg time="2025-07-26T01:41:58.676980" level="TRACE">Return: None</msg>
+<arg>***** [ END OF TEST - ${TEST_NAME} ] *****</arg>
+<status status="PASS" start="2025-07-26T01:41:58.670117" elapsed="0.006863"/>
+</kw>
+<msg time="2025-07-26T01:41:58.676980" level="TRACE">Return: None</msg>
+<status status="PASS" start="2025-07-26T01:41:58.654288" elapsed="0.022692"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<msg time="2025-07-26T01:41:58.680480" level="TRACE">Arguments: [  ]</msg>
+<msg time="2025-07-26T01:41:58.680480" level="TRACE">Return: None</msg>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-07-26T01:41:58.679971" elapsed="0.000509"/>
+</kw>
+<msg time="2025-07-26T01:41:58.683008" level="TRACE">Return: None</msg>
+<arg>After Test</arg>
+<arg>AND</arg>
+<arg>Close Browser</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="PASS" start="2025-07-26T01:41:58.651250" elapsed="0.031758"/>
+</kw>
+<status status="FAIL" start="2025-07-26T01:41:49.395245" elapsed="9.289719">Setup failed:
+WebDriverException: Message: 'chromedriver.exe' executable may have wrong permissions.
+</status>
+</test>
+<doc>This suite performs checks for valid login</doc>
+<status status="FAIL" start="2025-07-26T01:41:48.944212" elapsed="9.751888"/>
+</suite>
+<status status="FAIL" start="2025-07-26T01:41:48.905831" elapsed="9.795372"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Testcases">Testcases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Valid_Login_Suite">Testcases.Valid_Login_Suite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

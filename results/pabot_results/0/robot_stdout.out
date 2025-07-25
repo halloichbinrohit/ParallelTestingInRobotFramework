@@ -1,0 +1,22 @@
+==============================================================================
+Testcases                                                                     
+==============================================================================
+Testcases.Invalid Login Tests :: This suite performs checks for invalid logins
+==============================================================================
+Login with user but empty password                                    | PASS |
+------------------------------------------------------------------------------
+Login with empty user but password                                    | PASS |
+------------------------------------------------------------------------------
+Valid user but invalid password                                       | PASS |
+------------------------------------------------------------------------------
+Invalid user but valid password                                       | PASS |
+------------------------------------------------------------------------------
+Login with locked out user                                            | PASS |
+------------------------------------------------------------------------------
+Testcases.Invalid Login Tests :: This suite performs checks for in... | PASS |
+5 tests, 5 passed, 0 failed
+==============================================================================
+Testcases                                                             | PASS |
+5 tests, 5 passed, 0 failed
+==============================================================================
+Output:  C:\Users\rohitnegi01\PycharmProjects\SauceDemoRobotFramework\results\pabot_results\0\output.xml
